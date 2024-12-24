@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('MyApp1'),
+          title: const Text('MyApp Wk04'),
           leading: IconButton(
             icon: const Icon(Icons.menu),
             onPressed: () {
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
           ],
         ),
         body: Padding(
-          padding: const EdgeInsets.all(12.0),
+          padding: const EdgeInsets.all(10.0),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
                   'Hello test',
                   style: TextStyle(fontSize: 22),
                 ),
-                const Text('CS App week 3a'),
+                const Text('CS App week 4'),
                 const TextField(
                   decoration: InputDecoration(
                     // กำหนดสไตล์รูปแบบ
@@ -73,18 +73,18 @@ class MyApp extends StatelessWidget {
                   // margin: EdgeInsets.all(10),
                   // padding: EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                      // boxShadow: [
-                      //   BoxShadow(
-                      //     // color: Colors.grey,
-                      //     color: Color(0xFFaaaaaa),
-                      //     spreadRadius: 2,
-                      //     blurRadius: 6,
-                      //     offset: Offset(0, 0),
-                      //   )
-                      // ],
-                      ),
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    // boxShadow: [
+                    //   BoxShadow(
+                    //     // color: Colors.grey,
+                    //     color: Color(0xFFaaaaaa),
+                    //     spreadRadius: 2,
+                    //     blurRadius: 6,
+                    //     offset: Offset(0, 0),
+                    //   )
+                    // ],
+                  ),
                   alignment: Alignment.centerRight,
                   child: const Text(
                     'History:',
@@ -92,17 +92,17 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
 
-                // Row(
-                //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                //   children: [
-                //     Image.network('https://picsum.photos/250?image=9',
-                //         height: 100),
-                //     Image.network('https://picsum.photos/250?image=9',
-                //         height: 100),
-                //     Image.network('https://picsum.photos/250?image=9',
-                //         height: 100),
-                //   ],
-                // ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Image.network('https://picsum.photos/250?image=9',
+                        height: 100),
+                    Image.network('https://picsum.photos/250?image=9',
+                        height: 100),
+                    Image.network('https://picsum.photos/250?image=9',
+                        height: 100),
+                  ],
+                ),
                 // Row(
                 //   mainAxisAlignment: MainAxisAlignment.end,
                 //   children: [
@@ -119,16 +119,16 @@ class MyApp extends StatelessWidget {
                     child: Column(
                       children: [
                         Text('1,230 THB'),
-                        // Image.asset(
-                        //   'assets/images/computer.jpg',
-                        //   width: 120,
-                        // )
+                        Image.asset(
+                          'assets/images/computer.jpg',
+                          width: 60,
+                        )
                       ],
                     ),
                   ),
                 ),
                 const SizedBox(
-                  height: 14,
+                  height: 4,
                 ),
 
                 //       const TextField(
@@ -160,7 +160,7 @@ class MyApp extends StatelessWidget {
                 //       ),
                 //     )),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Image.network(
                     'https://ita.kmutnb.ac.th/images/ita_banner3.jpg'),
